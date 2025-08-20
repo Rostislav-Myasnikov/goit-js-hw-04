@@ -2,9 +2,9 @@ function isEnoughCapacity(products, containerSize) {
   let quantityFruits = 0;
   for (const quantity of Object.values(products)) {
     quantityFruits += quantity;
-    if (containerSize < quantityFruits) {
-      return false;
-    }
+  }
+  if (containerSize < quantityFruits) {
+    return false;
   }
   return true;
 }
